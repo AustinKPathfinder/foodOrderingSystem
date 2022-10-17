@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.food.ordering.system.order.service.domain.OrderApplicationServiceTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.476 s <<< FAILURE! - in com.food.ordering.system.order.service.domain.OrderApplicationServiceTest
+testCreateOrderWithWrongTotalPrice  Time elapsed: 0.065 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <Total price: 250.00 is not equal to Order items total: 200.00> but was: <Total price: 250.00is not equal to Order items total: 200.00>
+	at com.food.ordering.system.order.service.domain.OrderApplicationServiceTest.testCreateOrderWithWrongTotalPrice(OrderApplicationServiceTest.java:160)
+

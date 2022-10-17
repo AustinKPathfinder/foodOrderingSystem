@@ -1,8 +1,7 @@
 package com.food.ordering.system.order.service.domain.entity;
 
-import com.food.ordering.system.domain.entity.BaseEntity;
-import com.food.ordering.system.domain.valueobject.Money;
-import com.food.ordering.system.domain.valueobject.ProductId;
+import com.food.ordering.system.order.service.domain.valueobject.Money;
+import com.food.ordering.system.order.service.domain.valueobject.ProductId;
 
 public class Product extends BaseEntity<ProductId> {
 
@@ -17,8 +16,9 @@ public class Product extends BaseEntity<ProductId> {
     public Product(ProductId id){
         super.setId(id);
     }
-    public void updateWithConfirmedNameAndPrice(String name, Money Price){
-
+    public void updateWithConfirmedNameAndPrice(String name, Money price){
+        this.name = name;
+        this.price = price;
     }
     public String getName() {
         return name;
